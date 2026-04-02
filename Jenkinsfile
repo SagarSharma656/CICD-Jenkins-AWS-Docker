@@ -43,7 +43,7 @@ pipeline {
 
         stage ('Send Email Notification') {
             steps {
-                emaillext(
+                emailext(
                     subject: "NestJs - Jenkins Build Notification ",
                     body: "The Jenkins build and deployment process of NestJs has completed successfully.",
                     to: "${EMAIL}",
